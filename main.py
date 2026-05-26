@@ -19,8 +19,8 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[o for o in origins if o],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -33,3 +33,7 @@ app.include_router(admin_router, prefix="/api/admin", tags=["Admin"])  # ← add
 @app.get("/")
 def root():
     return {"message": "Coursify API is running!"}
+
+@app.get("/ping")
+def ping():
+    return {"status": "ok"}
