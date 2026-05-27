@@ -138,7 +138,7 @@ Development Tools
 ## Deployment Link
 https://coursify-web-mzls.onrender.com/
 https://coursify-fastapi-backend-1.onrender.com/
-
+https://drive.google.com/file/d/1KVlR_xhUrL87Eb8BF9vENUXHQWB4bY8B/view
 ## Test Account
 
 ## Team Members and Roles
