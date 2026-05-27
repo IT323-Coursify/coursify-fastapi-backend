@@ -19,7 +19,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://coursify-web-m2ls.onrender.com"],
+    allow_origins=["https://coursify-web-mzls.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
