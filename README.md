@@ -2,9 +2,7 @@
 Coursify: A Personalized Course Recommendation System
 
 ## Project Description
-Coursify is a personalzed college course recommendation system designed for Senior High School (SHS) sutdents in the Philippines. The system helps students identify suitable college degree programs based on their RIASEC
-interests, Big Five personality traits (OCEAN), and academic performance in core subjects such as Mathematics, Science, English, and Abstract Reasoning.The platform uses a Random Forest machine learning model to analyze
-student assessment data and geneate ranked course recommendations. Coursify aims to reduce mismatched college enrollments, course shifting, and dropoutrates by providing data-driven career guidance.
+Coursify is a personalzed college course recommendation system designed for Senior High School (SHS) sutdents in the Philippines. The system helps students identify suitable college degree programs based on their RIASEC interests, Big Five personality traits (OCEAN), and academic performance in core subjects such as Mathematics, Science, English, and Abstract Reasoning.The platform uses a Random Forest machine learning model to analyze student assessment data and geneate ranked course recommendations. Coursify aims to reduce mismatched college enrollments, course shifting, and dropoutrates by providing data-driven career guidance.
 
 ## Features
 1. Authentication & User Management
@@ -139,6 +137,7 @@ Development Tools
 https://coursify-web-mzls.onrender.com/
 https://coursify-fastapi-backend-1.onrender.com/
 https://drive.google.com/file/d/1KVlR_xhUrL87Eb8BF9vENUXHQWB4bY8B/view
+
 ## Test Account
 
 ## Team Members and Roles
