@@ -7,6 +7,50 @@ interests, Big Five personality traits (OCEAN), and academic performance in core
 student assessment data and geneate ranked course recommendations. Coursify aims to reduce mismatched college enrollments, course shifting, and dropoutrates by providing data-driven career guidance.
 
 ## Features
+1. Authentication & User Management
+
+Feature	Description
+Registration	Email verification with 6-digit OTP (10-min expiry)
+Login	JWT-based authentication, 7-day expiry
+Password Reset	OTP-based flow with short-lived reset token
+Profile Management	Update username, grade level, strand
+Role System	user → admin → superadmin hierarchy
+
+2. Assessment Engine
+
+Feature	Description
+RIASEC Test	60 questions (10 per code) → 5-point Likert scale
+Big Five Test	40 questions (8 per trait) → with reverse scoring
+Aptitude Test	48 questions (4 subjects × 12 questions) → multiple choice
+Random Sampling	Questions shuffled per user from active pool
+
+3. ML Course Recommendation
+
+Feature	Description
+Model	RandomForest Classifier
+Input Features	20-dimensional vector (RIASEC 6 + Big5 5 + Aptitude 4 + Strand 5)
+Output	Top 5 courses with confidence percentages
+Artifacts	Model, scaler, label encoder, feature names (joblib)
+
+4. Admin Dashboard
+
+Endpoint	Access	Purpose
+/analytics	Admin+	User stats, registration trends, role/strand breakdown
+/analytics/courses	Admin+	Most-recommended courses, per-strand rankings
+/analytics/assessments	Admin+	Submission stats, avg aptitude/RIASEC scores
+/questions	Admin+	CRUD operations on question pools
+/users	Superadmin only	Paginated user list with role/status updates
+/audit-log	Superadmin only	Role & status change history
+/export/users	Superadmin only	CSV export of all users
+
+5. Question Management
+
+Three question pools with distinct schemas:
+
+Pool	Fields
+RIASEC	text, subcategory (6 codes), active
+Big Five	text, subcategory (5 traits), reverse_scored, active
+Aptitude	text, subject, topic, difficulty, options (A-D), correct_answer, active
 
 ## Technology Stack
 Frontend Technologies
