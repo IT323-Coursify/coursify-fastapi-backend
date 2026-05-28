@@ -85,6 +85,18 @@ npm run build
 The optimized build output will be in the build/ folder, ready for static hosting.
 Note: The basename is set to /coursify-web in the router. If you deploy to a different path or domain root, update the basename prop in App.js accordingly.
 
+## Test accounts 
+User: 
+E: yunasilva01@gmail.com 
+P: Genesis1:1
+
+E: anyachan.maki@gmail.com 
+P: Genesis1:1
+
+Super admin: 
+E: seanfinn830@gmail.com 
+P: Genesis1:1
+
 ## Known Limitations
 •	Admin and superadmin roles are web-only — The mobile version of Coursify only supports the student role. Logging in with admin or superadmin credentials on the mobile app will not grant access to any admin features
 •	Email delivery in deployment — OTP verification and password reset emails use Gmail SMTP which requires outbound ports 465 or 587. Most cloud hosting providers block these ports, causing connection timeouts in production. Locally this works fine since the machine can connect directly. The proper solution for production is to replace Gmail SMTP with a dedicated email API service such as SendGrid or Mailgun
